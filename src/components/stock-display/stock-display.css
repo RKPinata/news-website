@@ -1,0 +1,45 @@
+/* stock-display.css */
+
+/* Container for stock rows */
+.stock-row-container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align items to the top */
+    padding: 10px;
+    background-color: #383535; /* Background color for the row container */
+}
+  
+  /* Styling for each stock display */
+  .stock-display {
+    margin-right: 20px; /* Add some spacing between stock displays */
+  }
+  
+  /* Styling for individual spans */
+  .stock-display span {
+    margin-right: 10px; /* Add spacing between the spans inside each stock display */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  /* Additional styling for individual spans based on their content */
+  .stock-display .ticker {
+    color: #007bff; /* Blue color for ticker */
+    font-size: 0.9rem;
+  }
+  
+  .stock-display .latest-price {
+    color: #28a745; /* Green color for latest price */
+    font-size: 0.9rem;
+  }
+
+  .stock-display .percentage-change {
+    color: #dc3545; /* Red color for price change */
+    font-size: 1.2rem;
+  }
+  
+  .stock-display .price-change {
+    color: #dc3545; /* Red color for price change */
+    font-size: 0.9rem;
+  }
+  
