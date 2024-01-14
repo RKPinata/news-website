@@ -1,0 +1,6 @@
+.stock-display-container {
+  display: flex;
+  padding: 10px;
+  background-color: #383535; /* Background color for the row container */
+  width: 100%; /* Ensure the container takes up the full width */
+}

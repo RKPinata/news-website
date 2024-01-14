@@ -1,4 +1,4 @@
-import './stock-display.css';
+import './StockDisplay.css';
 
 export default function StockDisplay({ ticker, latestPrice, percentageChange, priceChange }) {
   const isPositiveChange = percentageChange >= 0;
