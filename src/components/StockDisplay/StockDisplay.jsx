@@ -11,8 +11,8 @@ export default function StockDisplay({
   };
 
   /** @returns color classnames for change element */
-  const changeColor = (changeElementName) => {
-    return isPositiveChange(changeElementName)
+  const changeColor = (changesLabel) => {
+    return isPositiveChange(changesLabel)
       ? "positive-change"
       : "negative-change";
   };
