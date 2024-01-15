@@ -1,6 +1,16 @@
+header {
+  width: 100vw; /* Ensure the container width takes the whole screen */
+}
+
 .stock-display-container {
   display: flex;
+  justify-content: space-between; /* Spreads the children apart if not enough element to fill */
+  background-color: #383535;
   padding: 10px;
-  background-color: #383535; /* Background color for the row container */
-  width: 100%; /* Ensure the container takes up the full width */
+  overflow: scroll;
 }
+
+/** Optional: hide the scrollbar*/
+/* .stock-display-container::-webkit-scrollbar {
+  display: none;
+} */

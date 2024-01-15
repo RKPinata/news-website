@@ -1,53 +1,45 @@
-/* stock-display.css */
 
-/* Container for stock rows */
-.stock-row-container {
-  display: flex;
-  justify-content: flex-start; /* Align items to the left */
-  align-items: flex-start; /* Align items to the top */
-  padding: 10px;
-  background-color: #383535; /* Background color for the row container */
-  width: 100%; /* Ensure the container takes up the full width */
-}
-
-/* Styling for each stock display */
 .stock-display {
   display: flex;
-  flex-grow: 1;
-  margin-right: 20px; /* Add some spacing between stock displays */
+  padding: 10px;
   flex-direction: column; /* Stack children vertically */
+  gap: 10px;
 }
 
-/* Styling for top and bottom lines */
 .top-line,
 .bottom-line {
   display: flex;
   justify-content: space-between;
-  width: 100%; /* Make sure it takes the full width of the parent */
+  gap: 20px; /* The spans will always at least have a gap of 20px */
 }
 
 /* Additional styling for individual spans */
 .stock-display span {
-  margin-right: 10px; /* Add spacing between the spans inside each stock display */
   font-weight: bold; /* Make the text bold */
 }
 
 .stock-display .ticker {
-  color: #ffffff; /* Blue color for ticker */
+  color: #ffffff; /* Blue color for ticker */ /* danish: what?? */
   font-size: 0.9rem;
 }
 
 .stock-display .latest-price {
-  color: #ffffff; /* Green color for latest price */
+  color: #ffffff; /* Green color for latest price */ /* danish: green??? */
   font-size: 0.9rem;
 }
 
 .stock-display .percentage-change {
-  color: #dc3545; /* Red color for percentage change */
   font-size: 1.2rem;
 }
 
 .stock-display .price-change {
-  color: #dc3545; /* Red color for price change */
   font-size: 0.9rem;
+}
+
+.positive-change {
+  color: #1db954;
+}
+
+.negative-change {
+  color: #f45b5b;
 }
