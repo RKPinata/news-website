@@ -1,6 +1,6 @@
 import React from "react";
-import { STOCK_DATA } from "../StockDisplay/stock-data";
-import StockDisplay from "../StockDisplay/StockDisplay";
+import { STOCK_DATA } from "@/constants/stock-data";
+import StockDisplay from "@/components/StockDisplay/StockDisplay";
 import "./Header.css";
 
 function Header() {
