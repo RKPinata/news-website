@@ -1,5 +1,4 @@
 
-/* Styling for each stock display */
 .stock-display {
   display: flex;
   padding: 10px;
@@ -7,7 +6,6 @@
   gap: 10px;
 }
 
-/* Styling for top and bottom lines */
 .top-line,
 .bottom-line {
   display: flex;
@@ -21,12 +19,12 @@
 }
 
 .stock-display .ticker {
-  color: #ffffff; /* Blue color for ticker */
+  color: #ffffff; /* Blue color for ticker */ /* danish: what?? */
   font-size: 0.9rem;
 }
 
 .stock-display .latest-price {
-  color: #ffffff; /* Green color for latest price */
+  color: #ffffff; /* Green color for latest price */ /* danish: green??? */
   font-size: 0.9rem;
 }
 
