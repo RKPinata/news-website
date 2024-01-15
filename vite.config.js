@@ -1,6 +1,5 @@
-import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path";
+import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 /** The alias is an implementation of absolute path imports in vite
@@ -9,7 +8,7 @@ import path from "path";
  * so we can use @ to import files in src folder
  * The path module in the provided code is imported from the Node.js standard library
  * read more: https://nodejs.org/api/path.html
- * 
+ *
  * ps. There are other ways to implement absolute path in vite with jsconfig.json or tsconfig.json
  * psx2. Try to use absolute path in your projects, it will make your life easier
  * Thank you very much tehepero
@@ -19,7 +18,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": "/src",
     },
   },
 });
