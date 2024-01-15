@@ -1,16 +1,20 @@
-import './StockDisplay.css';
+import "./StockDisplay.css";
 
-export default function StockDisplay({ ticker, latestPrice, percentageChange, priceChange }) {
-  const isPositiveChange = percentageChange >= 0;
-
-  const percentageChangeStyle = {
-    color: isPositiveChange ? '#1db954' : '#f45b5b',
-    fontSize: '1.2rem', // Adjust the font size as needed
+export default function StockDisplay({
+  ticker,
+  latestPrice,
+  percentageChange,
+  priceChange,
+}) {
+  const isPositiveChange = (change) => {
+    return change > 0;
   };
 
-  const priceChangeStyle = {
-    color: isPositiveChange ? '#1db954' : '#f45b5b',
-    fontSize: '0.9rem', // Adjust the font size as needed
+  /** @returns color classnames for change element */
+  const changeColor = (changeElementName) => {
+    return isPositiveChange(changeElementName)
+      ? "positive-change"
+      : "negative-change";
   };
 
   return (
@@ -21,10 +25,12 @@ export default function StockDisplay({ ticker, latestPrice, percentageChange, pr
           <span className="latest-price">{latestPrice}</span>
         </div>
         <div className="bottom-line">
-          <span className="percentage-change" style={percentageChangeStyle}>
+          <span
+            className={`percentage-change ${changeColor(percentageChange)}`}
+          >
             {percentageChange}%
           </span>
-          <span className="price-change" style={priceChangeStyle}>
+          <span className={`price-change ${changeColor(priceChange)}`}>
             ({priceChange})
           </span>
         </div>

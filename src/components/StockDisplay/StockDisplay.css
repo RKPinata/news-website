@@ -43,11 +43,17 @@
 }
 
 .stock-display .percentage-change {
-  color: #dc3545; /* Red color for percentage change */
   font-size: 1.2rem;
 }
 
 .stock-display .price-change {
-  color: #dc3545; /* Red color for price change */
   font-size: 0.9rem;
+}
+
+.positive-change {
+  color: #1db954;
+}
+
+.negative-change {
+  color: #f45b5b;
 }
