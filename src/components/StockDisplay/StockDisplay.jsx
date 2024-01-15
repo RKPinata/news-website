@@ -18,22 +18,18 @@ export default function StockDisplay({
   };
 
   return (
-    <div className="stock-row-container">
-      <div className="stock-display">
-        <div className="top-line">
-          <span className="ticker">{ticker}</span>
-          <span className="latest-price">{latestPrice}</span>
-        </div>
-        <div className="bottom-line">
-          <span
-            className={`percentage-change ${changeColor(percentageChange)}`}
-          >
-            {percentageChange}%
-          </span>
-          <span className={`price-change ${changeColor(priceChange)}`}>
-            ({priceChange})
-          </span>
-        </div>
+    <div className="stock-display">
+      <div className="top-line">
+        <span className="ticker">{ticker}</span>
+        <span className="latest-price">{latestPrice}</span>
+      </div>
+      <div className="bottom-line">
+        <span className={`percentage-change ${changeColor(percentageChange)}`}>
+          {percentageChange}%
+        </span>
+        <span className={`price-change ${changeColor(priceChange)}`}>
+          ({priceChange})
+        </span>
       </div>
     </div>
   );
